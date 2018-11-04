@@ -1,0 +1,6 @@
+---
+# tasks file for network_vrf
+- name: NX-OS Devices
+  include_tasks: nxos.yml
+  when: ansible_network_os == "nxos" and tenants is defined
+
